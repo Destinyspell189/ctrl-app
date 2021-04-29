@@ -1,0 +1,49 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Your Dashboard</title>
+        <link rel="stylesheet" href="\stylesheets\dycalendar.css">
+        <link rel="stylesheet" href="dashstyle.scss">
+        <link rel="stylesheet" href="application.css">
+    </head>
+    <body class ="background-grad">
+
+        <div class="mov-down"></div>
+        <div class ="align">    
+        <div>
+            <div class ="container-junior"> Welcome message</div>
+        </div>
+        <div>
+            <div class ="container-junior"> To do list</div>
+        </div>
+    </div>
+        <section>
+            <div class="box">
+                <div class="container">
+                    <div id="dycalendar"></div>
+                </div>
+            </div>
+
+            <div class='v-align pos-down'>
+                <div class='hero-btn'>
+                
+                     <button class='btn'>
+                        <a src ="pages\calendar.html">Edit Calendar</a> 
+                  </button>
+               
+                </div>
+              </div>  
+        </section>
+        <script src="javascript\features\application.js"></script>
+        <script>
+            dycalendar.draw({
+                target: '#dycalendar',
+                type: 'month',
+                dayformat: 'full',
+                highlighttargetdate: true,
+                prevnectbutton: 'show'
+            })
+        </script>        
+    </body>
+</html>
