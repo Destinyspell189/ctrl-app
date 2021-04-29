@@ -10,11 +10,12 @@
     <%= stylesheet_link_tag 'dycalendar', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'dashstyle', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'buttonanim', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', params[:controller] %>
+
 
   </head>
 
   <body>
     <%= yield %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
