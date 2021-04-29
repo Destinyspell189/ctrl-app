@@ -15,9 +15,11 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+require("channels/calendar")
+
 //= require_self
-//= require_tree
 //= require_calendar
+//= require_tree
 
 
 
