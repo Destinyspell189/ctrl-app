@@ -22,6 +22,18 @@
     margin-top:22%;
 }
 
+.title
+{
+    margin-top: 50px;
+    height: 200px;
+    
+}
+h1
+{
+    font-size: large;
+    font-family: 'Lobster', cursive;
+}
+
 .align
 {
     display:flex;
